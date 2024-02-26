@@ -1,0 +1,148 @@
+<html>
+    <h1>Galactic astral type identification</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    alpha
+                </td>
+                <td>
+                    <input type="text" name="textalpha">
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    delta
+                </td>
+                <td>                       
+                    <input type="text" name="textdelta">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    u
+                </td>
+                <td>
+                    <input type="text" name="textu">
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    g
+                </td>
+                <td>
+                    <input type="text" name="textg">
+                </td>                
+                </tr>
+            <tr>
+                <td>
+                    r
+                </td>
+                <td>
+                    <input type="text" name="textr">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    i
+                </td>
+                <td>
+                    <input type="text" name="texti">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    z
+                </td>
+                <td>
+                    <input type="text" name="textz">
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    run_ID
+                </td>
+                <td>
+                    <input type="text" name="textrunid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    rerun_ID
+                </td>
+                <td>
+                    <input type="text" name="textrerunid">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                     cam_col
+                </td>
+                <td>
+                    <input type="text" name="textcamcol">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    field_ID
+                 </td>
+                <td>
+                    <input type="text" name="textfieldid">
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    spec_obj_ID
+                </td>
+                <td>
+                    <input type="text" name="textspecobjid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    redshift
+
+               </td>
+               <td>
+                   <input type="text" name="textredshift">
+               </td>
+           </tr>
+            <tr>
+                <td>
+                    plate
+                </td>
+                <td>
+                    <input type="text" name="textplate">
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    MJD
+                </td>
+                <td>
+                    <input type="text" name="textmjd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    fiber_ID
+                </td>
+                <td>
+                    <input type="text" name="textfiberid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary" name="buttonpredict">Predict</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{result}}
+                </td>
+            </tr>
+        </table>
+    </form>
+</html>
